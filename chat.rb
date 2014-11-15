@@ -1,9 +1,9 @@
-require 'sinatra' 
+require 'sinatra'
 require 'sinatra/reloader' if development?
 #set :port, 3000
 #set :environment, :production
 
-chat = ['welcome..']
+chat = ['Bienvenido..']
 
 get('/') { erb :index }
 
@@ -25,4 +25,3 @@ get '/update' do
       <span data-last="<%= @last %>"></span>
   HTML
 end
-

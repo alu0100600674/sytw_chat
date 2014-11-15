@@ -1,0 +1,41 @@
+body{
+  background-color: #FFAA41;
+}
+
+#cabecera{
+  height: 150px;
+  text-align: center;
+  //background-color: red;
+}
+
+.logo{
+	height: 150px;
+}
+
+#ventana{
+  width: 90%;
+  border: border: 10px solid #979797;
+  //text-align: center;
+}
+
+#chat{
+  width: 75%;
+  backgroud-color: blue;
+  float: left;
+}
+
+#usuarios{
+  width: 25%;
+  backgroud-color: red;
+  float: right;
+}
+
+#mensaje{
+  backgroud-color: green;
+  clear: both;
+}
+
+#pie{
+	height: 50px;
+	text-align: center;
+}
