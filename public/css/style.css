@@ -14,23 +14,28 @@ body{
 
 #ventana{
   width: 90%;
+  height: 450px;
   border: border: 10px solid #979797;
   //text-align: center;
 }
 
 #chat{
   width: 75%;
+  height: 410px;
   backgroud-color: blue;
+  border: border: 10px solid #979797;
   float: left;
 }
 
 #usuarios{
   width: 25%;
+  height: 410px;
   backgroud-color: red;
   float: right;
 }
 
 #mensaje{
+  height: 40px;
   backgroud-color: green;
   clear: both;
 }
