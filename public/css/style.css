@@ -6,10 +6,29 @@ body{
   height: 150px;
   text-align: center;
   //background-color: red;
+  background-color: #FFAA41;
 }
 
 .logo{
 	height: 150px;
+}
+
+#menu{
+  background-color: #FFAA41;
+  height: 100px;
+  text-align: center;
+}
+
+.vacio-izq{
+  width: 5%;
+  height: 450px;
+  float: left;
+}
+
+.vacio-dcha{
+  width: 5%;
+  height: 450px;
+  float: right;
 }
 
 #ventana{
@@ -17,6 +36,7 @@ body{
   height: 450px;
   border: border: 10px solid #979797;
   //text-align: center;
+  background-color: #FFAA41;
 }
 
 #chat{
@@ -25,6 +45,8 @@ body{
   backgroud-color: blue;
   border: border: 10px solid #979797;
   float: left;
+  background-color: #FFAA41;
+  background-color: green;
 }
 
 #usuarios{
@@ -32,15 +54,20 @@ body{
   height: 410px;
   backgroud-color: red;
   float: right;
+  background-color: #FFAA41;
+  background-color: red;
 }
 
 #mensaje{
   height: 40px;
   backgroud-color: green;
   clear: both;
+  background-color: #FFAA41;
+  background-color: blue;
 }
 
 #pie{
 	height: 50px;
 	text-align: center;
+  background-color: #FFAA41;
 }
