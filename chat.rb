@@ -1,11 +1,22 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
+require 'haml'
 #set :port, 3000
 #set :environment, :production
 
+@lista_usuario = Array.new
+
 chat = ['Bienvenido..']
 
-get('/') { erb :index }
+get('/') { erb :iniciarSesion }
+
+post '/entrar' do
+  erb :chat
+end
+
+get '/salir' do
+  erb :iniciarSesion
+end
 
 get '/send' do
   return [404, {}, "Not an ajax request"] unless request.xhr?

@@ -13,26 +13,16 @@
       <img src="images/logo.png" alt="miniChat" class="logo"/>
     </div>
 
-    <div id="menu">
+    <!-- <div id="menu">
       <br>
       <button type="button" class="btn btn-default">Registrarse</button>
       <button type="button" class="btn btn-success">Iniciar Sesión</button>
 
       <button type="button" class="btn btn-danger">Cerrar Sesión</button>
-    </div>
+    </div> -->
 
     <div id="ventana">
-
-      <div id="chat"></div>
-
-      <div id="usuarios">
-
-      </div>
-
-      <div id="mensaje">
-      <input id="text" placeholder="Escribe tu mensaje y pulsa Enter." autofocus />
-      </div>
-
+      <%= yield %>
     </div>
 
     <div id="pie">
