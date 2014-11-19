@@ -46,7 +46,6 @@ body{
   border: border: 10px solid #979797;
   float: left;
   background-color: #FFAA41;
-  background-color: green;
 }
 
 #usuarios{
@@ -54,16 +53,13 @@ body{
   height: 410px;
   backgroud-color: red;
   float: right;
-  background-color: #FFAA41;
-  background-color: red;
+  background-color: orange;
 }
 
 #mensaje{
   height: 40px;
-  backgroud-color: green;
   clear: both;
   background-color: #FFAA41;
-  background-color: blue;
 }
 
 #pie{

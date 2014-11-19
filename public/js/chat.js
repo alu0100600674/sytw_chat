@@ -3,7 +3,7 @@ $('#text').keypress(
     if( e.keyCode==13 ){
       $.get('/send',{text:$('#text').val()});
       $('#text').val('');
-    } 
+    }
   }
 );
 
