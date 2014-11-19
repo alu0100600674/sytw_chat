@@ -4,17 +4,40 @@ require 'haml'
 #set :port, 3000
 #set :environment, :production
 
-@lista_usuario = Array.new
+enable :sessions
+set :session_secret, '*&(^#234a)'
+
+$lista_usuarios = Array.new
 
 chat = ['Bienvenido..']
 
-get('/') { erb :iniciarSesion }
+get '/' do
+  erb :iniciarSesion
+end
 
 post '/entrar' do
-  erb :chat
+  usuario = params['usuario']
+
+  if($lista_usuarios.include? usuario)
+   puts "----USUARIO YA EXISTE----"
+   erb :errorUsuario
+  else
+    session['usuario'] = usuario
+    $lista_usuarios << usuario
+    erb :chat
+  end
 end
 
 get '/salir' do
+  usuario_borrar = session['usuario']
+  $lista_usuarios.delete(usuario_borrar)
+  session.clear
+
+  puts "----------------"
+  puts usuario_borrar
+  puts "----------------"
+  puts $lista_usuarios
+
   erb :iniciarSesion
 end
 
