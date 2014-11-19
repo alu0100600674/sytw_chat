@@ -15,7 +15,7 @@ body{
 
 #menu{
   background-color: #FFAA41;
-  height: 100px;
+  height: 50px;
   text-align: center;
 }
 
@@ -33,7 +33,7 @@ body{
 
 #ventana{
   width: 100%;
-  height: 450px;
+  height: 500px;
   border: border: 10px solid #979797;
   //text-align: center;
   background-color: #FFAA41;

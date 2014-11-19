@@ -19,11 +19,18 @@ post '/entrar' do
   usuario = params['usuario']
 
   if($lista_usuarios.include? usuario)
-   puts "----USUARIO YA EXISTE----"
+   puts "------------------------------------------------"
+   puts "El usuario #{usuario} ya existe."
+   puts "Lista de usuario: #{$lista_usuarios}"
+   puts "------------------------------------------------"
    erb :errorUsuario
   else
     session['usuario'] = usuario
     $lista_usuarios << usuario
+    puts "------------------------------------------------"
+    puts "El usuario #{usuario} ha entrado."
+    puts "Lista de usuario: #{$lista_usuarios}"
+    puts "------------------------------------------------"
     erb :chat
   end
 end
@@ -33,12 +40,13 @@ get '/salir' do
   $lista_usuarios.delete(usuario_borrar)
   session.clear
 
-  puts "----------------"
-  puts usuario_borrar
-  puts "----------------"
-  puts $lista_usuarios
+  puts "------------------------------------------------"
+  puts "El usuario #{usuario_borrar} ha salido."
+  puts "Lista de usuario: #{$lista_usuarios}"
+  puts "------------------------------------------------"
 
-  erb :iniciarSesion
+  #erb :iniciarSesion
+  redirect '/'
 end
 
 get '/send' do
