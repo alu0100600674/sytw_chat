@@ -24,13 +24,21 @@ post '/entrar' do
    puts "------------------------------------------------"
    erb :errorUsuario
   else
-    session['usuario'] = usuario
-    $lista_usuarios << usuario
-    puts "------------------------------------------------"
-    puts "El usuario #{usuario} ha entrado."
-    puts "Lista de usuario: #{$lista_usuarios}"
-    puts "------------------------------------------------"
-    erb :chat
+    if(usuario != "")
+      session['usuario'] = usuario
+      $lista_usuarios << usuario
+      puts "------------------------------------------------"
+      puts "El usuario #{usuario} ha entrado."
+      puts "Lista de usuario: #{$lista_usuarios}"
+      puts "------------------------------------------------"
+      erb :chat
+    else
+      puts "------------------------------------------------"
+      puts "Debe introducir un nombre de usuario."
+      puts "Lista de usuario: #{$lista_usuarios}"
+      puts "------------------------------------------------"
+      erb :errorUsuarioVacio
+    end
   end
 end
 

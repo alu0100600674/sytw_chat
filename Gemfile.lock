@@ -31,5 +31,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rack-test
   sinatra-contrib
   thin
