@@ -5,6 +5,11 @@ task :server do
   sh "bundle exec ruby chat.rb"
 end
 
+desc "Ejecutar los tests"
+task :test do
+  sh "ruby test/test.rb"
+end
+
 desc "make a non Ajax request via curl"
 task :noajax do
   sh "curl -v http://localhost:4567/update"
