@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    backports (3.6.3)
+    backports (3.6.4)
     daemons (1.1.9)
     eventmachine (1.0.3)
     multi_json (1.10.1)
@@ -31,6 +31,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rack-test
+  sinatra
   sinatra-contrib
   thin
