@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'rspec'
+#require 'rspec'
 require 'test/unit'
 require 'minitest/autorun'
 require 'rack/test'
