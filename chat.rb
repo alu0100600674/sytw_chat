@@ -75,3 +75,16 @@ get '/update' do
       <span data-last="<%= @last %>"></span>
   HTML
 end
+
+get '/updateUsuarios' do
+  return [404, {}, "Not an ajax request"] unless request.xhr?
+  @updates = $lista_usuarios[params['last'].to_i..-1] || []
+
+  @last = $lista_usuarios.size
+  erb <<-'HTML', :layout => false
+      <% @updates.each do |phrase| %>
+        <%= phrase %> <br />
+      <% end %>
+      <span data-last="<%= @last %>"></span>
+  HTML
+end
