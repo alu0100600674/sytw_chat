@@ -34,3 +34,19 @@ $('#text').keypress(
     },
   1000);
 })();
+
+function ver(e,m){
+    var t=e.keyCode || e.wich;
+    if(t==13){
+       agregar(m);
+        return false;
+    }
+    return true;
+}
+function agregar(m){
+    document.getElementById('chat').innerHTML+='<br />'+m;
+    document.forms[0].textarea.value='';
+}
+onload=function(){
+    setInterval(function(){document.getElementById('chat').scrollTop=document.getElementById('chat').scrollHeight},30);
+} 

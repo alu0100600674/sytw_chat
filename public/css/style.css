@@ -46,6 +46,7 @@ body{
   border: border: 10px solid #979797;
   float: left;
   background-color: #FFAA41;
+  overflow-y: scroll;
 }
 
 #usuarios{
@@ -54,6 +55,7 @@ body{
   backgroud-color: red;
   float: right;
   background-color: orange;
+  overflow-y: scroll;
 }
 
 #mensaje{
