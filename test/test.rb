@@ -35,9 +35,9 @@ describe "Contenido de la web" do
     assert last_response.body.include?("Entrar")
   end
 
-  it "Comprobación de usuario sin nombre" do
-    post '/entrar'
-    assert last_response.body.include?("¡No se puede entrar sin nombre, elige un nombre!")
-  end
+  # it "Comprobación de usuario sin nombre" do
+  #   post '/entrar'
+  #   assert last_response.body.include?("¡No se puede entrar sin nombre, elige un nombre!")
+  # end
 
 end
