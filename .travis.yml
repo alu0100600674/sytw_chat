@@ -6,7 +6,6 @@ before_install:
   - sh -e /etc/init.d/xvfb start
 script:
   - bundle install --without production
-  - ruby test/test.rb
 branches:
   only:
     - master
