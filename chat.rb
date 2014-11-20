@@ -22,7 +22,8 @@ post '/entrar' do
    puts "El usuario #{usuario} ya existe."
    puts "Lista de usuario: #{$lista_usuarios}"
    puts "------------------------------------------------"
-   erb :errorUsuario
+   #erb :errorUsuario
+   redirect '/usuarioCogido'
   else
     if(usuario != "")
       session['usuario'] = usuario
@@ -31,13 +32,15 @@ post '/entrar' do
       puts "El usuario #{usuario} ha entrado."
       puts "Lista de usuario: #{$lista_usuarios}"
       puts "------------------------------------------------"
-      erb :chat
+      #erb :chat
+      redirect '/chat'
     else
       puts "------------------------------------------------"
       puts "Debe introducir un nombre de usuario."
       puts "Lista de usuario: #{$lista_usuarios}"
       puts "------------------------------------------------"
-      erb :errorUsuarioVacio
+      #erb :errorUsuarioVacio
+      redirect '/usuarioVacio'
     end
   end
 end
@@ -54,6 +57,18 @@ get '/salir' do
 
   #erb :iniciarSesion
   redirect '/'
+end
+
+get '/usuarioVacio' do
+  erb :errorUsuarioVacio
+end
+
+get '/usuarioCogido' do
+  erb :errorUsuario
+end
+
+get '/chat' do
+  erb :chat
 end
 
 get '/send' do
