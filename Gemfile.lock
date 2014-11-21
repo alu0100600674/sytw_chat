@@ -94,6 +94,7 @@ DEPENDENCIES
   minitest
   rack-test
   rake
+  rest-client
   rspec
   selenium-webdriver (= 2.44.0)
   sinatra
