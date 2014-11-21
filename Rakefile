@@ -1,4 +1,4 @@
-task :default => :server
+task :default => :test
 
 desc "run the chat server"
 task :server do
