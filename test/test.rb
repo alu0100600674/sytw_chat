@@ -4,6 +4,8 @@ require 'test/unit'
 require 'minitest/autorun'
 require 'rack/test'
 require 'selenium-webdriver'
+require 'coveralls'
+Coveralls.wear!
 
 require_relative '../chat.rb'
 
