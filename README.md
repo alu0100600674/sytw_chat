@@ -21,5 +21,5 @@ Hecha en Travis:
 [https://travis-ci.org/alu0100600674/sytw_acortadorURLs](https://travis-ci.org/alu0100600674/sytw_chat)
 
 ### Coveralls
-[https://coveralls.io/repos/alu0100600674/sytw_chat/badge.png?branch=master](https://coveralls.io/repos/alu0100600674/sytw_chat/badge.png?branch=master)
+[https://coveralls.io/repos/alu0100600674/sytw_chat/badge.png?branch=master](https://coveralls.io/repos/alu0100600674/sytw_chat/badge.png?branch=master)  
 ![coveralls](https://coveralls.io/repos/alu0100600674/sytw_chat/badge.png?branch=master)
