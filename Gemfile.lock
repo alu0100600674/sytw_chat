@@ -95,7 +95,7 @@ DEPENDENCIES
   rack-test
   rake
   rspec
-  selenium-webdriver
+  selenium-webdriver (= 2.44.0)
   sinatra
   sinatra-contrib
   test-unit

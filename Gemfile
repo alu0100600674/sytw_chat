@@ -3,12 +3,7 @@ source 'https://rubygems.org'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'thin'
-gem 'rack-test'
 
-
-group :development do
-  gem 'selenium-webdriver'
-end
 
 
 group :test do
@@ -18,6 +13,6 @@ group :test do
   gem 'test-unit'
   gem 'rspec'
   gem 'capybara'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '2.44.0'
   gem 'coveralls', require: false
 end
