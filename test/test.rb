@@ -23,7 +23,8 @@ describe "Contenido de la web" do
   before :all do
     @browser = Selenium::WebDriver.for :firefox
     @web_local = 'http://localhost:4567/'
-    @browser.get(@web_local)
+    @web = 'http://sytw-minichat.herokuapp.com/'
+    @browser.get(@web)
 	  @browser.manage.timeouts.implicit_wait = 5
   end
 
@@ -34,7 +35,7 @@ describe "Contenido de la web" do
 	it "Carga de la web" do
 		get '/'
 		assert last_response.ok?
-    assert_equal(@web_local, @browser.current_url)
+    assert_equal(@web, @browser.current_url)
 	end
 
 	it "Titulo de la web" do
