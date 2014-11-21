@@ -15,4 +15,5 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver', '2.44.0'
   gem 'coveralls', require: false
+  gem 'rest-client'
 end

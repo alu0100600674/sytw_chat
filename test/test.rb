@@ -6,6 +6,7 @@ require 'test/unit'
 require 'minitest/autorun'
 require 'rack/test'
 require 'selenium-webdriver'
+require 'restclient'
 
 
 require_relative '../chat.rb'
